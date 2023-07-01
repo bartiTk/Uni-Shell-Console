@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" styleClass="line" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="terminal.cntrls.LineController">
+   <children>
+      <Label fx:id="usrName" focusTraversable="false" styleClass="name" text="Username" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="dir" focusTraversable="false" layoutX="5.0" layoutY="180.0" styleClass="directory" text="Directory$:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <StackPane alignment="CENTER_LEFT">
+         <children>
+            <Label fx:id="cmd" styleClass="command" text="Command x" textFill="WHITE" visible="false" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtInput" onKeyPressed="#keyPressed" styleClass="input">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </StackPane>
+   </children>
+</HBox>
